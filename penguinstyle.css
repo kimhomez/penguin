@@ -29,8 +29,8 @@ svg {
   display: block;
 }
 
-.penguin_wrapper svg { 
-  fill: navy; 
+.penguin_wrapper svg {
+  fill: navy;
 }
 
 .penguin_inner_wrapper {
@@ -41,8 +41,8 @@ svg {
 
 .facing_upleft,
 .facing_left,
-.facing_downleft { 
-  transform: scale(-1 , 1);
+.facing_downleft {
+  transform: scale(-1, 1);
 }
 
 .penguin_sprite {
@@ -88,7 +88,9 @@ a {
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
 .foot_print {
   height: 30px;
@@ -96,21 +98,33 @@ a:hover { text-decoration: underline; }
   position: absolute;
   z-index: -10;
   image-rendering: pixelated;
-  background-size: 30px; 
+  background-size: 30px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAHlJREFUSEtjZBggwDhA9jKMWky3kB8N6oEP6tkv//0HuSJVnIkm0YHTULpbDLMQPcyp7XMMHw86i2EhQC2fE+1jmlsMs4DWQU4wVdMqkRHMo+g+p1kco/twwCymVRlKMKhHLaZWCIwGNbVCkqA5o0FNMIiopWDkBTUAjfAoH+hhPScAAAAASUVORK5CYII=);
   animation: forwards fade 10s;
 }
 
 @keyframes fade {
-  0% {opacity: 0.4}
-  50% {opacity: 0.4}
-  100% {opacity: 0}
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fade_lighter {
-  0% {opacity: 0.1}
-  50% {opacity: 0.1}
-  100% {opacity: 0}
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .jump_print {
@@ -119,12 +133,12 @@ a:hover { text-decoration: underline; }
   position: absolute;
   z-index: -10;
   image-rendering: pixelated;
-  background-size: 36px 32px; 
+  background-size: 36px 32px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAAAAXNSR0IArs4c6QAAAK1JREFUWEftl8ENgCAMRWEKJ3QqJ3QKiAc81NTWT4AfU6+KvL4WCjmRPZmMJ8FAx1nKWzD7lqF/Q4MukOVAFoCVeq8xt6HlQL0AqDHVEA3QaBBpTtbWw1AAif2K19DsVGm1dBsKIKGorbYwpO3gYcjb23hrqEUwe/lHL/PWTvuOt5fJSEbXknbG5j8xajnvNfa/W4e1OixjXiNyHve97GvRTweyDKLvYUPohNa4Cm6ZcCHJb/u+AAAAAElFTkSuQmCC);
   animation: forwards fade_lighter 10s;
 }
 
-.star{
+.star {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -140,7 +154,7 @@ a:hover { text-decoration: underline; }
 }
 
 .star svg {
-  fill: rgb(148, 234, 255)
+  fill: rgb(148, 234, 255);
 }
 
 .star.twinkle {
@@ -148,7 +162,13 @@ a:hover { text-decoration: underline; }
 }
 
 @keyframes twinkle {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.5); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
